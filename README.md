@@ -1,3 +1,2 @@
-# tornaREST
-![](art/logo.jpg)
+
 
