@@ -1,0 +1,21 @@
+# Preface
+
+所有 API 返回数据的结构如下：
+```
+{
+    'code': code,
+    'msg': msg,
+    'data': data
+}
+```
+[{u'task': {u'url': u'http://10.1.245.138:8080/job/test1/', u'color': u'aborted', u'name': u'test1'}, u'stuck': False, u'url': u'queue/item/20/', u'inQueueSince': 1457596797881, u'actions': [{u'causes': [{u'userName': u'admin', u'userId': u'admin', u'shortDescription': u'Started by user admin'}]}], u'why': u'Waiting for next available executor', u'buildable': True, u'params': u'', u'buildableStartMilliseconds': 1457596806820, u'id': 20, u'pending': False, u'blocked': False}]
+{u'building': True, u'queueId': 23, u'displayName': u'#14 registry.test.com/zhwenh/tomcat:2.3.1 registry.test.com/zhwenh/tomcat:latest', u'description': None, u'changeSet': {u'items': [], u'kind': u'git'}, u'artifacts': [], u'timestamp': 1457607647239, u'number': 14, u'actions': [{u'causes': [{u'userName': u'admin', u'userId': u'admin', u'shortDescription': u'Started by user admin'}]}, {}, {u'scmName': u'', u'buildsByBranchName': {u'refs/remotes/origin/master': {u'buildNumber': 14, u'buildResult': None, u'marked': {u'SHA1': u'66b1fb9c3edddd63e1fbda23ce89a8aa87778451', u'branch': [{u'SHA1': u'66b1fb9c3edddd63e1fbda23ce89a8aa87778451', u'name': u'refs/remotes/origin/master'}]}, u'revision': {u'SHA1': u'66b1fb9c3edddd63e1fbda23ce89a8aa87778451', u'branch': [{u'SHA1': u'66b1fb9c3edddd63e1fbda23ce89a8aa87778451', u'name': u'refs/remotes/origin/master'}]}}}, u'remoteUrls': [u'https://github.com/zhwenh/dockerfile-jdk-tomcat.git'], u'lastBuiltRevision': {u'SHA1': u'66b1fb9c3edddd63e1fbda23ce89a8aa87778451', u'branch': [{u'SHA1': u'66b1fb9c3edddd63e1fbda23ce89a8aa87778451', u'name': u'refs/remotes/origin/master'}]}}, {}, {}], u'id': u'14', u'keepLog': False, u'url': u'http://10.1.245.138:8080/job/test/14/', u'culprits': [], u'result': None, u'executor': {}, u'duration': 0, u'builtOn': u'', u'fullDisplayName': u'test #14 registry.test.com/zhwenh/tomcat:2.3.1 registry.test.com/zhwenh/tomcat:latest', u'estimatedDuration': 382640}
+{u'building': False, u'queueId': 26, u'displayName': u'#8', u'description': None, u'changeSet': {u'items': [], u'kind': None}, u'artifacts': [], u'timestamp': 1457608931049, u'number': 8, u'actions': [{u'causes': [{u'userName': u'admin', u'userId': u'admin', u'shortDescription': u'Started by user admin'}]}, {}, {}], u'id': u'8', u'keepLog': False, u'url': u'http://10.1.245.138:8080/job/test1/8/', u'culprits': [], u'result': u'ABORTED', u'executor': None, u'duration': 425969, u'builtOn': u'', u'fullDisplayName': u'test1 #8', u'estimatedDuration': -1}
+{u'scm': {}, u'color': u'aborted', u'lastSuccessfulBuild': None, u'actions': [{}, {}], u'lastCompletedBuild': {u'url': u'http://10.1.245.138:8080/job/test1/5/', u'number': 5}, u'lastUnsuccessfulBuild': {u'url': u'http://10.1.245.138:8080/job/test1/5/', u'number': 5}, u'upstreamProjects': [], u'lastFailedBuild': None, u'healthReport': [], u'queueItem': {u'task': {u'url': u'http://10.1.245.138:8080/job/test1/', u'name': u'test1'}, u'stuck': False, u'url': u'queue/item/24/', u'timestamp': 1457608084162, u'inQueueSince': 1457608079162, u'why': u'In the quiet period. Expires in 4.9 sec', u'buildable': False, u'params': u'', u'id': 24, u'blocked': False}, u'lastBuild': {u'url': u'http://10.1.245.138:8080/job/test1/5/', u'number': 5}, u'lastStableBuild': None, u'description': u'test job', u'downstreamProjects': [], u'concurrentBuild': False, u'lastUnstableBuild': None, u'buildable': True, u'displayNameOrNull': None, u'inQueue': True, u'keepDependencies': False, u'name': u'test1', u'displayName': u'test1', u'builds': [{u'url': u'http://10.1.245.138:8080/job/test1/5/', u'number': 5}, {u'url': u'http://10.1.245.138:8080/job/test1/4/', u'number': 4}, {u'url': u'http://10.1.245.138:8080/job/test1/3/', u'number': 3}, {u'url': u'http://10.1.245.138:8080/job/test1/2/', u'number': 2}, {u'url': u'http://10.1.245.138:8080/job/test1/1/', u'number': 1}], u'url': u'http://10.1.245.138:8080/job/test1/', u'firstBuild': {u'url': u'http://10.1.245.138:8080/job/test1/1/', u'number': 1}, u'nextBuildNumber': 6, u'property': [{}]}
+
+
+http://10.1.39.60:8088/v1/builds
+
+http://10.1.245.139:8088/v1/builds?namespace=zhwenh&build_id=2&repo_name=sss/ttt
+/Library/Python/2.7/site-packages/jenkins/__init__.py
+http://127.0.0.1:8088/v1/builds?namespace=zhwenh&build_id=2&repo_name=sss/ttt

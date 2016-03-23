@@ -1,0 +1,16 @@
+{
+  "name": "TornaREST Document",
+  "version": "0.1.0",
+  "title": "tornaREST",
+  "url": "http://127.0.0.1",
+  "sampleUrl": "http://127.0.0.1",
+  "header": {
+    "title": "Preface",
+    "filename": "header.md"
+  },
+  "template": {
+    "forceLanguage": "en",
+  	"withGenerator": false,
+    "withCompare": false
+  }
+}
